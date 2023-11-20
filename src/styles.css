@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.svg-icon{
+  fill: #000;
+  margin: 7px 0px;
+  transition: fill .3s ease-in-out;
+  cursor: pointer;
+}
+
+.svg-icon:hover{
+  fill: teal;
+  transform: scale(1.1);
+  transition: fill .1s ease-in-out;
+}
+
+.svg-description{
+  opacity: 0;
+  cursor: default;
+  transition: all .2s ease;
+  z-index: 1;
+  display: none;
+}
+
+.container-svg:hover .svg-description{
+  background-color: bisque;
+  opacity: .8;
+  transition: all .1s ease;
+  display: block;
+}
+
+.svg-mode{
+  cursor: pointer;
+}

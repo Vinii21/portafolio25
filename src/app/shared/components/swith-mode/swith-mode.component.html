@@ -1,0 +1,23 @@
+<div class="
+  w-20 p-1
+  rounded-2xl
+  bg-slate-400
+  absolute -left-24 -bottom-10
+  flex items-center justify-between
+">
+<button (click)="HandleActiveMode()" class="btn-moon"
+  [ngClass]="{
+    'prueba': activeMode
+  }"
+>
+  <shared-svg-moon></shared-svg-moon>
+</button>
+<button class="btn-sun"
+  (click)="HandleActiveMode()"
+  [ngClass]="{
+    'prueba2': !activeMode
+  }"
+>
+  <shared-svg-sun></shared-svg-sun>
+</button>
+</div>
