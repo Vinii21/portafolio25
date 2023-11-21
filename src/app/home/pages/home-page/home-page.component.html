@@ -1,1 +1,20 @@
-<p class="text-4xl text-red-600">home-page works!</p>
+<div class="bg-night w-full h-full rounded-3xl overflow-hidden relative">
+  <div class="relative w-full h-56">
+    <home-moon-svg></home-moon-svg>
+    <home-star-svg *ngFor="let star of stars" [settings]="star"></home-star-svg>
+  </div>
+  <div class="absolute bottom-12 w-full flex justify-center">
+    <home-mountain-svg></home-mountain-svg>
+  </div>
+  <div class="absolute bottom-12 left-10">
+    <home-tree-svg></home-tree-svg>
+  </div>
+  <div class="absolute bottom-16 z-20 w-full left-[60%]">
+    <home-fire-svg></home-fire-svg>
+    <home-bonfire-svg></home-bonfire-svg>
+  </div>
+  <div class="flex absolute bottom-0 w-full">
+    <home-floor-svg></home-floor-svg>
+    <home-floor-svg></home-floor-svg>
+  </div>
+</div>

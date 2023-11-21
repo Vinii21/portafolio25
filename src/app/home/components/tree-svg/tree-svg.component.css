@@ -1,0 +1,15 @@
+.cls-3-t, .cls-6-t, .cls-8-t{
+  animation: move 2s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}

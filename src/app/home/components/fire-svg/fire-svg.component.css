@@ -1,0 +1,26 @@
+.fire-container{
+  background-image: url("../../../../assets/fire1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+  animation: singFire .7s infinite linear;
+}
+
+@keyframes singFire {
+  0% {
+    background-image: url("../../../../assets/fire1.svg");
+  }
+  25% {
+    background-image: url("../../../../assets/fire2.svg");
+  }
+  50% {
+    background-image: url("../../../../assets/fire3.svg");
+  }
+  75% {
+    background-image: url("../../../../assets/fire2.svg");
+  }
+  100% {
+    background-image: url("../../../../assets/fire1.svg");
+  }
+}

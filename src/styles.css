@@ -10,7 +10,7 @@
 }
 
 .svg-icon{
-  fill: #000;
+  fill: white;
   margin: 7px 0px;
   transition: fill .3s ease-in-out;
   cursor: pointer;
@@ -39,4 +39,8 @@
 
 .svg-mode{
   cursor: pointer;
+}
+
+.svg-icon.active{
+  fill: teal;
 }
