@@ -10,4 +10,7 @@ export class GithubComponent {
   @Input()
   public size: string = "20";
 
+  @Input()
+  public about: boolean = false;
+
 }

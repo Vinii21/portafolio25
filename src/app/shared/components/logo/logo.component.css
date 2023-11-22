@@ -1,0 +1,39 @@
+.logovi {
+  animation: pulse 3s infinite ease-in-out;
+}
+
+.logovi:hover {
+  animation-play-state: paused;
+  animation: poom .1s linear;
+
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes poom {
+  0% {
+    transform: translateX(0px);
+  }
+  25%{
+    transform: translateX(-5px);
+  }
+  50%{
+    transform: translateX(0px);
+  }
+  75%{
+    transform: translateX(5px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
