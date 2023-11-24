@@ -26,3 +26,7 @@
   opacity: 0;
   transition: .5s all linear;
 }
+
+.background-animation{
+  background-color: rgb(18, 20, 35);
+}

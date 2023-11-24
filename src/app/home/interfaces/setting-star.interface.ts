@@ -4,5 +4,6 @@ export interface settingStar {
   left?: number | string
   right?: number | string
   fill: string
-  size: string
+  size: string,
+  animation: boolean
 }

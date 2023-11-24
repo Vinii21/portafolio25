@@ -15,7 +15,8 @@ export class StarSvgComponent {
     left: 0,
     right: 0,
     fill: "#fff",
-    size: "25px"
+    size: "25px",
+    animation: false
   }
 
 }

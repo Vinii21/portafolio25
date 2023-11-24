@@ -1,0 +1,13 @@
+.starUp{
+  animation: flash 10s infinite ease-in-out;
+}
+
+.starDown{
+  animation: flash 15s infinite ease-in-out;
+}
+
+@keyframes flash {
+  0%{transform: scale(0);}
+  50%{transform: scale(1);}
+  100%{transform: scale(0);}
+}

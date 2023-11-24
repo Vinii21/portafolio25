@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { settingStar } from '../../interfaces/setting-star.interface';
 
 @Component({
@@ -6,82 +6,28 @@ import { settingStar } from '../../interfaces/setting-star.interface';
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.css']
 })
-export class HomePageComponent {
+export class HomePageComponent implements OnInit {
 
+  public stars: settingStar[] = []
 
-  public stars: settingStar[] = [
-    {
-      top: "20px",
-      bottom: "none",
-      left: "100px",
-      right: "none",
-      fill: "#fff",
-      size: "20px"
-    },
-    {
-      top: "none",
-      bottom: "60px",
-      left: "300px",
-      right: "none",
-      fill: "#fff",
-      size: "20px"
-    },
-    {
-      top: "100px",
-      bottom: "none",
-      left: "none",
-      right: "60px",
-      fill: "#fff",
-      size: "25px"
-    },
-    {
-      top: "40px",
-      bottom: "none",
-      left: "none",
-      right: "360px",
-      fill: "#fff",
-      size: "10px"
-    },
-    {
-      top: "20px",
-      bottom: "none",
-      left: "360px",
-      right: "none",
-      fill: "#fff",
-      size: "20px"
-    },
-    {
-      top: "80px",
-      bottom: "none",
-      left: "180px",
-      right: "none",
-      fill: "#fff",
-      size: "20px"
-    },
-    {
-      top: "none",
-      bottom: "30px",
-      left: "30px",
-      right: "none",
-      fill: "#fff",
-      size: "20px"
-    },
-    {
-      top: "none",
-      bottom: "30px",
-      left: "none",
-      right: "140px",
-      fill: "#fff",
-      size: "20px"
-    },
-    {
-      top: "none",
-      bottom: "70px",
-      left: "none",
-      right: "280px",
-      fill: "#fff",
-      size: "25px"
-    },
-  ];
+  ngOnInit(): void {
+    const containerWidth = 100; // Ancho del contenedor
+    const containerHeight = 100; // Alto del contenedor
+
+    for (let i = 0; i < 600; i++) {
+      const animation = i < 300 ? true : false; // Alternar entre true y false
+      const randomSize = `${Math.floor(Math.random() * 5) + 1}px`; // Tamaño aleatorio hasta 15px
+
+      this.stars.push({
+        top: Math.random() * containerHeight + "%",
+        bottom: 'auto',
+        left: Math.random() * containerWidth + "%",
+        right: 'auto',
+        fill: "#fff",
+        size: randomSize,
+        animation,
+      });
+    }
+  }
 
 }

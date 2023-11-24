@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        teal: "#005766",
+        teal: "#10acdf",
         night: "#070135",
-        greyS: "#545454",
+        greyS: "rgb(18, 20, 35)",
       }
     },
   },

@@ -1,4 +1,4 @@
-<svg id="svg1"  viewBox="0 0 85.06581 81.04004"
+<svg id="svg1" class="star" [ngClass]="{'starUp': settings.animation, 'starDown': !settings.animation}"  viewBox="0 0 85.06581 81.04004"
   [ngStyle]="{
     'position': 'absolute',
     'fill': settings.fill,
@@ -6,7 +6,7 @@
     'bottom': settings.bottom,
     'left': settings.left,
     'right': settings.right,
-    'width': settings.size
+    'width': settings.size,
   }"
 >
   <defs>
