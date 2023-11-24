@@ -1,1 +1,9 @@
-<p>porfolio-page works!</p>
+<div class="bg-night h-full p-5 ">
+  <h2 class="text-3xl font-bold fixed z-10">Proyectos <span class="text-teal">destacados</span></h2>
+  <div class="flex flex-wrap justify-center gap-5 my-5 pt-8">
+    <porfolio-card-project
+      *ngFor="let project of projects"
+      [urlImage]="project"
+    ></porfolio-card-project>
+  </div>
+</div>
