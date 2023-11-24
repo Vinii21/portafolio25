@@ -26,6 +26,7 @@ import { NodejsSvgComponent } from './components/nodejs-svg/nodejs-svg.component
 import { ReduxSvgComponent } from './components/redux-svg/redux-svg.component';
 import { TailwindcssSvgComponent } from './components/tailwindcss-svg/tailwindcss-svg.component';
 import { ArrowSvgComponent } from './components/arrow-svg/arrow-svg.component';
+import { NgxTypedJsModule } from 'ngx-typed-js';
 
 
 
@@ -59,7 +60,8 @@ import { ArrowSvgComponent } from './components/arrow-svg/arrow-svg.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    NgxTypedJsModule
   ],
   exports: [
     LogoComponent,

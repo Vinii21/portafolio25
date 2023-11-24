@@ -1,13 +1,8 @@
 <h2 class="text-3xl font-bold my-5 mt-12">Interesado <span class="text-teal">en</span></h2>
 
-<ul>
-  <li>Flutter & Dart</li>
-  <li>React Native</li>
-  <li>Next Js</li>
-  <li>SQL | Postgre | MongoDB</li>
-  <li>Firebase</li>
-  <li>API</li>
-  <li>Adobe Illustrador</li>
-  <li>Inkscape</li>
-  <li>Figma</li>
+<ul class="mb-5 flex items-center flex-wrap gap-4">
+  <li
+    *ngFor="let tool of tools"
+    class="bg-slate-500 p-2 rounded-xl cursor-default"
+  >{{tool}}</li>
 </ul>
