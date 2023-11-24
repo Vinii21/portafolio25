@@ -25,6 +25,7 @@ import { JsSvgComponent } from './components/js-svg/js-svg.component';
 import { NodejsSvgComponent } from './components/nodejs-svg/nodejs-svg.component';
 import { ReduxSvgComponent } from './components/redux-svg/redux-svg.component';
 import { TailwindcssSvgComponent } from './components/tailwindcss-svg/tailwindcss-svg.component';
+import { ArrowSvgComponent } from './components/arrow-svg/arrow-svg.component';
 
 
 
@@ -53,7 +54,8 @@ import { TailwindcssSvgComponent } from './components/tailwindcss-svg/tailwindcs
     JsSvgComponent,
     NodejsSvgComponent,
     ReduxSvgComponent,
-    TailwindcssSvgComponent
+    TailwindcssSvgComponent,
+    ArrowSvgComponent
   ],
   imports: [
     CommonModule,
@@ -74,7 +76,8 @@ import { TailwindcssSvgComponent } from './components/tailwindcss-svg/tailwindcs
     NodejsSvgComponent,
     BootstrapSvgComponent,
     GitSvgComponent,
-    GithubComponent
+    GithubComponent,
+    ArrowSvgComponent
   ]
 })
 export class SharedModule { }

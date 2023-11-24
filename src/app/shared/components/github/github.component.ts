@@ -13,4 +13,7 @@ export class GithubComponent {
   @Input()
   public about: boolean = false;
 
+  @Input()
+  public fill?: string;
+
 }

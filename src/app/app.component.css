@@ -1,0 +1,28 @@
+.my_scroll {
+  scrollbar-color: teal rgb(49, 47, 44);
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  scrollbar-gutter: "none";
+}
+
+.my_scroll::-webkit-scrollbar-track{
+  background: rgb(49, 47, 44);
+  border-radius: 10px;
+  display: none;
+}
+
+.my_scroll::-webkit-scrollbar-thumb {
+  background-color: teal;
+  border-radius: 10px;
+  display: none;
+}
+
+.arrow-svg-container {
+  transition: 1s all linear;
+  opacity: 1;
+}
+
+.hide-element {
+  opacity: 0;
+  transition: .5s all linear;
+}

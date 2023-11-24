@@ -4,8 +4,11 @@
     <div class="h-full w-[30%] bg-greyS rounded-3xl">
       <shared-profile></shared-profile>
     </div>
-    <div class="h-full w-[70%] bg-white rounded-3xl">
+    <div id="miDiv" (scroll)="onDivScroll($event)" class="h-full w-[70%] bg-night text-white rounded-3xl overflow-x-auto my_scroll">
       <router-outlet></router-outlet>
+      <div class="arrow-svg-container" [ngClass]="{'hide-element': isScrolledDown}" *ngIf="!showArrow">
+        <shared-arrow-svg></shared-arrow-svg>
+      </div>
     </div>
     <shared-menu></shared-menu>
     <shared-swith-mode></shared-swith-mode>
