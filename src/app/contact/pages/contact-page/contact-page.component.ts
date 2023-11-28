@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ContactPageComponent {
 
+  public stateAlert: boolean = false;
+
+  public showAlert(value: boolean): void {
+    this.stateAlert = value;
+  }
 }

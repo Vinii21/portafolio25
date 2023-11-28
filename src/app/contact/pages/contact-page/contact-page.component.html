@@ -1,3 +1,5 @@
-<div class="w-full h-full p-5">
-  <h2 class="text-3xl text-white font-bold">Hablemos</h2>
+<div class="w-full h-full p-5 flex flex-row justify-center items-center relative overflow-hidden">
+  <contact-info-contact />
+  <contact-form-contact (showAlert)="showAlert($event)"/>
+  <contact-alert-pop [activeClassAlertPop]="stateAlert"/>
 </div>

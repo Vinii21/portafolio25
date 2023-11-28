@@ -1,0 +1,17 @@
+<form (submit)="OnSubmit()" [formGroup]="contactForm" class="text-center h-full flex flex-col justify-center pr-5">
+    <h2 class="text-3xl font-bold">Enviame un mensaje</h2>
+    <input formControlName="name" class="w-11/12 self-center my-2 rounded-xl bg-slate-400 text-black placeholder-black focus:placeholder-white p-2" type="text" placeholder="Nombre">
+    <input formControlName="email" class="w-11/12 self-center my-2 rounded-xl bg-slate-400 text-black placeholder-black focus:placeholder-white p-2" type="text" placeholder="Email">
+    <input formControlName="subject" class="w-11/12 self-center my-2 rounded-xl bg-slate-400 text-black placeholder-black focus:placeholder-white p-2" type="text" placeholder="Asunto">
+    <textarea formControlName="message" placeholder="Mensaje" class="w-11/12 max-h-20 self-center my-2 resize-none rounded-xl bg-slate-400 text-black placeholder-black focus:placeholder-white p-2"></textarea>
+    <button
+      (click)="OnSubmit()"
+      class="bg-blue-500 rounded-xl w-5/12 h-10 self-center"
+      [ngClass]="{
+        'btn-contact': activeClass
+      }"
+      [disabled]="activeDisabled"
+      type="submit"
+      >Enviar</button>
+</form>
+

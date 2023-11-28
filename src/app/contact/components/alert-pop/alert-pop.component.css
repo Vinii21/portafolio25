@@ -1,0 +1,12 @@
+.alertPop{
+  position: absolute;
+  bottom: -200px;
+  left: 10px;
+  background-color: rgba(100, 148, 237, 0.609);
+  backdrop-filter: blur(2px);
+  transition: all .3s ease-in;
+}
+
+.showAlertPop {
+  bottom: 10px;
+}

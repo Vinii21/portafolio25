@@ -1,0 +1,26 @@
+input, textarea {
+  opacity: .8;
+  transition: .7 all ease;
+  color: #fff;
+}
+
+input:hover, textarea:hover {
+  opacity: 1;
+}
+
+input:focus, textarea:focus {
+  background-color: rgb(20, 39, 92);
+  font-weight: bold;
+}
+
+.btn-contact{
+  animation: pulse .5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {transform: translateX(0px);}
+  25% {transform: translateX(-5px);}
+  50% {transform: translateX(5px);}
+  75% {transform: translateX(-5px);}
+  100% {transform: translateX(0px);}
+}

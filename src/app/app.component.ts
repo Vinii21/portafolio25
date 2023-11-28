@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
     this.router.events
       .pipe(filter((event): event is NavigationEnd => event instanceof NavigationEnd))
       .subscribe((event: NavigationEnd) => {
-        this.showArrow = event.url === '/';
+        this.showArrow = event.url === '/' || event.url === '/contact';
       });
   }
 
